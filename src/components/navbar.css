@@ -51,7 +51,6 @@
        color: gray;
   }
   
-  /* 在小屏幕上显示菜单 */
   @media (max-width: 768px) {
     
     .navbar{

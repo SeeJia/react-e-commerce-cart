@@ -52,3 +52,21 @@
     color: white;
     cursor: pointer;
   }
+
+  @media (max-width: 912px) {
+    .products {
+      grid-template-columns: 1fr 1fr;
+  }
+  }
+
+  @media (max-width: 820px) {
+    .products {
+      grid-template-columns: 1fr 1fr;
+  }
+  }
+
+  @media (max-width: 768px) {
+    .products {
+      grid-template-columns: 1fr;
+  } 
+  }

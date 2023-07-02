@@ -1,6 +1,7 @@
-import React,{useState} from 'react';
+import React,{useState,useContext} from 'react';
 import { Link } from 'react-router-dom';
 import {ShoppingCart, List, X} from 'phosphor-react';
+import {ShopContext} from '../context/shop-context';
 import './navbar.css';
 
 export const Navbar = () => {
@@ -9,6 +10,10 @@ export const Navbar = () => {
     const toggleMenu = () => {
       setIsMenuOpen(!isMenuOpen);
     };
+
+    const { getTotalProductCart } = useContext(ShopContext);
+    const totalProductCart = getTotalProductCart();
+
 
   return (
     <div className='navbar'>
@@ -26,7 +31,7 @@ export const Navbar = () => {
       </button>
         
         <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
-            <li><Link to="/cart"> <ShoppingCart size={32} /> </Link></li>
+            <li><Link to="/cart"> <ShoppingCart size={32} /> </Link>({totalProductCart})</li>
             {/* <li><Link to="/">Search</Link></li>
             <li><Link to="/">Search</Link></li>
             <li><Link to="/">Search</Link></li> */}

@@ -31,7 +31,7 @@ export const Navbar = () => {
       </button>
         
         <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
-            <li><Link to="/cart"> <ShoppingCart size={32} /> </Link>({totalProductCart})</li>
+            <li><Link to="/cart"> <ShoppingCart size={32} /> ({totalProductCart})</Link></li>
             {/* <li><Link to="/">Search</Link></li>
             <li><Link to="/">Search</Link></li>
             <li><Link to="/">Search</Link></li> */}

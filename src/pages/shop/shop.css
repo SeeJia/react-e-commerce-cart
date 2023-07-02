@@ -53,6 +53,12 @@
     cursor: pointer;
   }
 
+  @media (max-width: 1024px) {
+    .products {
+      grid-template-columns: 1fr 1fr;
+  }
+  }
+
   @media (max-width: 912px) {
     .products {
       grid-template-columns: 1fr 1fr;
@@ -78,4 +84,15 @@
   } 
      
   }
+
+  @media (max-width: 300px) {
+    .product {
+      width: 50px;
+      margin: 10px;
+  } 
+
+  .product img {
+    width: 200px;
+  }
+}
 

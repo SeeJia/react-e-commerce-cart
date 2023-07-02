@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import {ShoppingCart, List, X} from 'phosphor-react';
 import './navbar.css';
 
-const Navbar = () => {
+export const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     const toggleMenu = () => {
